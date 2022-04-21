@@ -36,6 +36,17 @@ public class RequestSpecTest {
     }
 
     @Test
+    public void requestUsZipCode90210_checkResponseSpec_expectStatusCode200AndContetTypeApplicationJson() {
+
+        given().
+            spec(requestSpec).
+        when().
+            get("us/90210").
+        then().
+            spec(responseSpec);
+    }
+
+    @Test
     public void requestUsZipCode90210_checkPlaceNameInResponseBody_expectBeverlyHills_withRequestSpec() {
 
         given().
@@ -53,7 +64,7 @@ public class RequestSpecTest {
         given().
             spec(requestSpec).
         when().
-            get("http://zippopotam.us/us/90210").
+            get("us/90210").
         then().
             spec(responseSpec).
         and().
@@ -68,7 +79,7 @@ public class RequestSpecTest {
         given().
             spec(requestSpec).
         when().
-            get("http://zippopotam.us/us/90210").
+            get("us/90210").
         then().
             extract().
             path("places[0].'place name'");
