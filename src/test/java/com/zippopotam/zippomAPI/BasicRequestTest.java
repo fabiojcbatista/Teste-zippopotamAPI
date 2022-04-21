@@ -7,7 +7,7 @@ import static org.hamcrest.Matchers.hasSize;
 
 import org.junit.Test;
 
-public class ZippomAPI {
+public class BasicRequestTest {
 	 @Test
 	    public void requestUsZipCode90210_checkPlaceNameInResponseBody_expectBeverlyHills() {
 

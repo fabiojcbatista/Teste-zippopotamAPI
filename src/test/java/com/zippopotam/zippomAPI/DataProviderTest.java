@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(DataProviderRunner.class)
-public class DataProviders {
+public class DataProviderTest {
     @DataProvider
     public static Object[][] zipCodesAndPlaces() {
         return new Object[][] {

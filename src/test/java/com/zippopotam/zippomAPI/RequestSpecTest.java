@@ -13,7 +13,7 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
-public class RequestSpec {
+public class RequestSpecTest {
     private static RequestSpecification requestSpec;
 
     @BeforeClass
